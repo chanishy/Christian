@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('cat.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text-container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.text-container p {
+    font-family: 'Cardo', serif;
+    font-size: 30px;
+    margin: 0; /* Remove default margin for the paragraph */
+}
+
+.navigation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100vh;
+    background-color: white; /* White rectangle background */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation a {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 45px 2px; /* Adjust the padding to increase or decrease the height */
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+.navigation a:hover {
+    background-color: #555;
+}
+.navigation a img {
+    width: 80px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}

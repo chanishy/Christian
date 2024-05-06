@@ -1,0 +1,450 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.name {
+    
+    font-family: 'Times New Roman', serif;
+    font-size: 100px;
+    color: #333;
+    text-align: center;
+    margin: 20px 0;
+}
+
+#main-page h1 {
+    font-family: 'Georgia', serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.vertical-nav {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    height: 830px;
+}
+
+.vertical-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 120px;
+    line-height: 100px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.vertical-nav .image-button img, .vertical-nav .icon-button img {
+    height: 100%;
+    width: auto;
+}
+
+.vertical-nav .icon-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-nav .icon-button img {
+    margin-right: 10px;
+}
+
+.vertical-nav a:hover {
+    background-color: #585454;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #292b29;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-button:hover {
+    background-color: #ffffff;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    color: #ffffff; /* Green color */
+    font-size: 20px; /* Font size 28 pixels */
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+progress {
+    width: 400px;
+    height: 30px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #ddd;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4CAF50;
+}
+
+progress::-moz-progress-bar {
+    background-color: #4CAF50;
+}
+
+#main-page, #home, #resume {
+    background-size: cover;
+    background-position: center;
+}
+
+#main-page {
+    background-image: url('shy.png');
+}
+
+#home {
+    background-image: url('cat.png');
+}
+
+#resume {
+    background-image: url('sky.png');
+}
+
+#skills {
+    background-color: black;
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.social-links img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.1);
+}
+
+#portfolio {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.portfolio-item img {
+    width: 100%;
+    max-width: 500px;
+    max-height: 240px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-item {
+    text-align: center;
+}
+
+.portfolio-label {
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+#about {
+    background-image: url('c.png');
+    background-size: 800px 600px;
+    background-position: right top;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.text-container2 {
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-size: 20px;
+    border: 2px solid #000000;
+    padding: 10px;
+    margin-top: 20px;
+    width: auto;
+    max-width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.text-container {
+    font-family: 'Times New Roman', serif;
+    font-size: 40px;
+    font-style: italic;
+    color: #ffffff;
+    max-width: 80%;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #434444;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.download-button:hover {
+    background-color: #302e2e;
+}
+.card {
+    width: 190px;
+    height: 254px;
+    background-image: linear-gradient(163deg, #ffffff 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+   }
+   
+   .card2 {
+    width: 190px;
+    height: 254px;
+    background-color: #1a1a1a;
+    border-radius:
+    transition all .2s;
+   }
+   
+   .card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .card:hover {
+    box-shadow: 0px 0px 30px 1px rgba(255, 255, 255, 0.3);
+   }
+   .loader {
+    position: relative;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 0px;
+    animation: typewriter 1s steps(50)  infinite alternate , blink 5s steps(50) infinite;
+  }
+  
+  .loader-text {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(to right,#ffffff, #242525);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes typewriter {
+    10% {
+      width: 0px;
+    }
+  
+    100% {
+      width: 240px;
+    }
+  }
+  
+  @keyframes blink {
+    10% {
+      border-right-color: rgba(255,255,255,.75);
+      ;
+    }
+  
+    100% {
+      border-right-color: transparent;
+    }
+  }
+  .c {
+    width: 17em;
+    height: 22.5em;
+    background: #000000;
+    transition: 3s ease-in-out;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .c span {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    font-size: 1em;
+  }
+  
+  .c .info {
+    font-weight: 300;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 0.75em;
+    
+    margin: 1em;
+  }
+  
+  .c .img {
+    width: 50px;
+    height: 2.8px;
+
+    margin: auto;
+    
+  }
+  
+  .c .share {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .c a {
+    color: white;
+    transition: .4s ease-in-out;
+  }
+  
+  .c a:hover {
+    color: red;
+  }
+  
+  .c button {
+    padding: 0.8em 1.7em;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+    border: none;
+    font-weight: bold;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: .4s ease-in-out;
+  }
+  
+  .c button:hover {
+    background: red;
+    color: white;
+    cursor: pointer;
+  }
+  .dl-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #434444;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.dl-button:hover {
+    background-color: #302e2e;
+}
+
+h1 {
+    color: #2E8B57; /* Green color */
+    font-size: 28px; /* Font size 28 pixels */
+}
+
+    .white {
+        color: rgb(247, 239, 129); /* Sets the color of the first part to white */
+    }
+
+    .black {
+        color: rgb(80, 75, 75); /* Sets the color of the second part to black */
+    }
+    .name .first-sentence {
+        color: white; /* White text color for the first sentence */
+    }
+
+    .name .second-sentence {
+        color: black; /* Black text color for the second sentence */
+    }
+    h1 .black1 {
+        color: rgb(255, 255, 255); /* Black text color for the first part */
+    }
+
+    h1 .white2{
+        color: rgb(0, 0, 0); /* White text color for the second part */
+    }
+
